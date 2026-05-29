@@ -1,5 +1,25 @@
 # Changelog
 
+## 2026-05-29
+There were a lot of changes uncommitted from 2024-09-27 and I'm just adding them all in whatever state they are in, undocumented.
+
+## 2024-09-27
+
+### Journal System
+
+I guess I never committed the journal templates, probably because I was going to find the explanation behind it to be lengthy. Since I didn't commit the original iteration when I started using it last year, the changes I'm making now will not appear in the git history, and can generally be ignored by anyone wanting to borrow ideas. However, I will write a section called "Changed", that assumes the previous iteration of the journal system for personal and historical purposes. The "Added" is meant to explain what I actually ended up with for anyone who is interested in using the same structure.
+####  Added
+
+The idea is to have a hybrid journaling approach: paper and digital. I really like paper journaling and I want to have it as an available option. I want my digital space to reflect what it is I find so useful about [[Taking a Nod from the Constraints of Paper Journaling - 2024-02-05 | what I find so useful about paper journaling]]. Before landing on this system, I had tried keeping everything in periodic notes as well as interstitial journaling. Neither was conducive to the writing flow I experienced when doing a single entry free write as I did in my paper journal. So I designed my digital system in a way to match my paper one. Journal entries have a theme that can be reflected in a title. If I add to the same topic on a different day, I start a new journal entry. This keeps me from having a bunch of unfinished journal entries with loose ends. 
+
+I have a directory at the root of the project called "Journals". There is a journal that is the landing place for my ideas that year (2024 is my "Year of Expression"), but there are also targeted journals with explicit goals, for example "Meta" is a journal where I reflect on my personal management and organizational system, as opposed to my actual work. I use a template written with [obsidian-templater-scripts](https://github.com/mihaiconstantin/obsidian-templater-scripts/tree/main) that prompts me to select which journal I want to add an entry to. 
+
+
+### Changed
+
+> For historical purposes only. Not reflected in the git history. 
+
+Prompt now asks the user which journal they want add the entry to. I removed the "previous" and "next" metadata because they are hard to keep track of. Instead, I want to start labeling posts with "parent". Maybe some entries don't have an obvious parent topic, but many will. For example, I frequently write posts that fall under [[ADHD]]. It makes more sense to just label the post as such than to try and find the last post that I wrote that fell in that category, which is what I've been doing. Plus, its pretty impossible to write a dataview that can pick up on a linked list like that. I may have to manually change the old posts to get them to show up in a unified dataview. If I wanted to automate "preview" and "next" *after* the fact, that would be possible. It is a nice to have feature because you can then "flip" through related entries like a book. It just doesn't make sense to lead the organizational strategy this way. 
 ## 2024-05-05
 
 ### Added 

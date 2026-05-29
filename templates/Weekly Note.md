@@ -11,18 +11,19 @@ date: <% tp.date.now("YYYY-MM-DD") %>
 ![[<% tp.date.weekday("[Sprint Review - Week of] YYYY-MM-DD",  -7) %>#❗️ Things to Avoid ❗️]]
 
 ![[<% tp.date.weekday("[Sprint Review - Week of] YYYY-MM-DD",  -7) %>#Task Ideas]]
-### Weekly Adventure
-- [ ] Car maintenance (fix hatchback)
-### Monday
-- [ ] Sprint Planning
-### Tuesday
-- [ ] [[Courses/Philosophy of Biology and Medicine/Philosophy of Biology and Medicine|Philosophy of Biology and Medicine]] 
-### Wednesday
-- [ ] EP Workshop Edits
-### Thursday
-- [ ] [[Courses/Philosophy of Biology and Medicine/Philosophy of Biology and Medicine|Philosophy of Biology and Medicine]]
-### Friday
-- [ ] [[<% tp.date.weekday("[Sprint Review - Week of] YYYY-MM-DD", -7) %>]]
+
+## Reflections
+
+What were your wins this week?
+- 
+
+What did not go so well, and why?
+
+
+What do you need accountability for next week?
+- 
+
+What are you grateful for?
 
 ### Tasks from weekly notes
 ```dataview
@@ -37,7 +38,6 @@ LIST
 FROM -"Templates"
 WHERE file.day >= date(<% tp.date.weekday("YYYY-MM-DD", 0) %>) AND file.day <= date(<% tp.date.weekday("YYYY-MM-DD", 6) %>)
 ```
-
 
 ## Active Experiments
 ```dataview
