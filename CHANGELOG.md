@@ -1,5 +1,8 @@
 # Changelog
 
+## 2026-06-09
+`add-Templates-to-templates-via-symlinks.sh` script creates symlinks so that all templates in `Templates` are symlinked to appear in `obsidian-plugins/templates/`.  It also adds a line in `obsidian-plugins/.gitignore` so that the symlink doesn't appear in the git repo. We need to do this because the templater plugin requires all templates be located in the same folder, but we want some of them to be vault specific (located in `Templates/`) and some of them to appear across multiple vaults (`obsidian-plugins/templates`). 
+
 ## 2026-05-29
 There were a lot of changes uncommitted from 2024-09-27 and I'm just adding them all in whatever state they are in, undocumented.
 
@@ -35,7 +38,7 @@ Templates prepended with "Resources - " are *theirs* in the sense that they are 
 #### Added 
 ##### Sprint Review Template
 
-[[Templates/templates/Sprint Review|Sprint Review template]] was previously in the [[Weekly Note template]], but I moved it to separate concerns. The weekly note now has a task list organized by day of the week. I'm still keeping tasks in [[OmniFocus]] for planning at scales larger than one week. I'd like to find a tool that let's me move over task due in the next week into my Obsidian weekly template. 
+[[obsidian-plugins/templates/Sprint Review|Sprint Review template]] was previously in the [[Weekly Note template]], but I moved it to separate concerns. The weekly note now has a task list organized by day of the week. I'm still keeping tasks in [[OmniFocus]] for planning at scales larger than one week. I'd like to find a tool that let's me move over task due in the next week into my Obsidian weekly template. 
 
 ## 2024-02-19
 

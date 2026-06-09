@@ -1,5 +1,25 @@
 # obsidian-templates
-Templates made for the Obsidian plugin, Templater
+
+## Templater
+The primary reason for this repository is the consistent use of the Templater plugin across vaults. I used to only have only one vault, and all the templates were in the same folder. Now that I am trying to use similar settings across more than one vault, I have found that I need some templates to be particular to only one vault (for example for the class `Biology and Society.md`) whereas other templates I'd like to be available across all my vaults (`Person.md`). This introduces a complication, because the Templater settings expect all templates to be in a single folder. As of 2026-06-09 there is no way to specify more than one folder. My solution is to keep templates in two locations. 
+
+1. Vault-specific templates go in  `./Templates` 
+2. System-wide templates go in `./obsidian-plugins/templates`
+
+> Note: `./` is the root directory of the entire vault, and this repository (`obsidian-plugins`), is expected to be located in the root directory.
+
+### Setup 
+
+Go to Settings > Community Plugins > Templater > Templater folder location. Change "Templater folder location" setting so that it can find templates in `obsidian-plugins/templates`. At this point, it should only be able to find system wide templates at this location.
+
+Next, navigate to the `obsidian-plugins` directory (the root of this repository). Run the `add-Templates-to-templates-via-symlinks.sh` script. That script creates symlinks so that all templates in `../Templates` are symlinked to appear in `./templates`.  When a symlink is created, the script also adds the symlink to this repository's `.gitignore` so that the symlink isn't tracked by git. 
+
+### Confirm it worked
+
+1. Long listing the files in `obsidian-plugins/templates` to visually confirm system wide templates are there alongside symlinks to files in `../Templates`.  Symlink files have arrows in them, for example `lrwxr-xr-x 1 nabrewer staff   38 Jun  9 15:53 'Biology and Society.md' -> '../../Templates/Biology and Society.md'` Regular files do not.
+2. You should also open up  `.gitignore` to check that *only* the symlinked Templates are listed in it (for example `templates/Biology and Society.md`).
+
+> Note: If you ever have issues and want to get rid of all symlink (and only symlinks) in a directory, run `find . -maxdepth 1 -type l` to list them and `find . -maxdepth 1 -type l -delete` to delete them.
 ## System-wide philosophy
 - the system is bound to change over time. When possible, decisions will be made to help the system withstand change. But it is also okay to introduce major changes, but these changes should be limited. To add some structure to the decision-making process, breaking changes are only allowed at the new year
 ## General note-taking philosophy
@@ -39,9 +59,6 @@ Is this distinction useful? I'm not sure, but I've had Obsidian a while and noth
 	- Wiki-style index files
 		- I have yet to actually make any of these and I'm not sure I will. I'm not sure it's necessary unless I'm compiling my notes into a product for an outward-facing audience
 
-## Digital Journaling
-
-- templates are bound to change over time. 
 
 ## Idea for this REAME
 
