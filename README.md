@@ -1,25 +1,61 @@
 # obsidian-templates
 
+## Repository Setup
+- [ ] add `obsidian-plugins` to `.gitignore` in vault's root repository
+- [ ] [[#Setup|Templater Setup]] 
+- [ ] Set up regularly recurring cron jobs
+
+## Automated Cron Jobs 
+
+> We will set up a cron job to automatically perform recurring maintenance tasks for our Obsidian repositories. Running the cron job every hour increases the chances it executes while our machine is awake. The script performs any necessary maintenance tasks.
+
+### Our end goal
+
+- run the maintenance script every hour
+- commit all new files in vault if thee have been changes
+- create a copy of vault-specific templates so they git committed to the vault
+- log output for debugging
+
+### commit all new files in vault
+These tasks currently include synchronizing files between directories and creating local Git snapshots of changes. The Git snapshots do not constitute a true backup since they remain on the same machine, but they provide a convenient "undo" mechanism if a plugin or script corrupts the repository. It only creates a Git commit when changes have actually occurred, keeping the repository history clean and avoiding unnecessary commits. This approach pairs well with regular system backups or cloud synchronization.
+
+### create a copy of vault-specific templates
+Templater only accepts one folder (and subfolders) as the location of template files. Therefore, templates shared across all vaults have to live in the same directory as templates specific to a particular vault. This is not ideal for keeping clean git repositories with properly separated concerns. Our work around is to put vault-specific templates in `obsidian-plugins/templates/custom`, add that directory to the obsidian-plugin repo gitignore, and then regularly copy the files in the custom directory to a directory in the root vault repository. 
+
+### What `vault-automations.sh` does
+
+- create a copy of custom templates () to vault root (`./Templates - READ ONLY`)
+- commit all new files in vault if thee have been changes
+
+### 1. Test run the scrip `vault-automations.sh`
+
+`./vault-automations.sh /Users/nabrewer/Applications/Obsidian/<vault-name>`
+
+### 2. Add the cron job
+
+This:
+
+- Keeps any existing cron jobs
+- Adds a new one that runs every hour
+- Uses the full path via $(pwd) so cron can find the script
+
+`(crontab -l 2>/dev/null; echo "0 * * * * $(pwd)/vault-automations.sh >> /tmp/vault-automations.log 2>&1") | crontab -`
+
+Or you can edit the chrontab via `chrontab -e`.
+### 3. Verify the job is listed
+
+`crontab -l`
+
+### 4. Check logs (debugging only)
+
+`tail -n 20 /tmp/vault-automations.log`
+
 ## Templater
 The primary reason for this repository is the consistent use of the Templater plugin across vaults. I used to only have only one vault, and all the templates were in the same folder. Now that I am trying to use similar settings across more than one vault, I have found that I need some templates to be particular to only one vault (for example for the class `Biology and Society.md`) whereas other templates I'd like to be available across all my vaults (`Person.md`). This introduces a complication, because the Templater settings expect all templates to be in a single folder. As of 2026-06-09 there is no way to specify more than one folder. My solution is to keep templates in two locations. 
-
-1. Vault-specific templates go in  `./Templates` 
-2. System-wide templates go in `./obsidian-plugins/templates`
-
-> Note: `./` is the root directory of the entire vault, and this repository (`obsidian-plugins`), is expected to be located in the root directory.
-
-### Setup 
+### Templater Setup 
 
 Go to Settings > Community Plugins > Templater > Templater folder location. Change "Templater folder location" setting so that it can find templates in `obsidian-plugins/templates`. At this point, it should only be able to find system wide templates at this location.
 
-Next, navigate to the `obsidian-plugins` directory (the root of this repository). Run the `add-Templates-to-templates-via-symlinks.sh` script. That script creates symlinks so that all templates in `../Templates` are symlinked to appear in `./templates`.  When a symlink is created, the script also adds the symlink to this repository's `.gitignore` so that the symlink isn't tracked by git. 
-
-### Confirm it worked
-
-1. Long listing the files in `obsidian-plugins/templates` to visually confirm system wide templates are there alongside symlinks to files in `../Templates`.  Symlink files have arrows in them, for example `lrwxr-xr-x 1 nabrewer staff   38 Jun  9 15:53 'Biology and Society.md' -> '../../Templates/Biology and Society.md'` Regular files do not.
-2. You should also open up  `.gitignore` to check that *only* the symlinked Templates are listed in it (for example `templates/Biology and Society.md`).
-
-> Note: If you ever have issues and want to get rid of all symlink (and only symlinks) in a directory, run `find . -maxdepth 1 -type l` to list them and `find . -maxdepth 1 -type l -delete` to delete them.
 ## System-wide philosophy
 - the system is bound to change over time. When possible, decisions will be made to help the system withstand change. But it is also okay to introduce major changes, but these changes should be limited. To add some structure to the decision-making process, breaking changes are only allowed at the new year
 ## General note-taking philosophy

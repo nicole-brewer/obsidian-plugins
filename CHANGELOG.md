@@ -1,5 +1,8 @@
 # Changelog
 
+## 2026-06-30
+The script `auto-commit.sh` used to be a vault specific file but I moved it to `obsidian-plugins/vault-automations.sh`. It now takes an argument (the vault path) so you can use it unmodified for any vault. It has added functionality where vault-specific templates are copied to `Templates - READ ONLY` in the root vault repo to keep concerns separate. This is a work around since templater doesn't let you list multiple source directories for templates. 
+
 ## 2026-06-09
 `add-Templates-to-templates-via-symlinks.sh` script creates symlinks so that all templates in `Templates` are symlinked to appear in `obsidian-plugins/templates/`.  It also adds a line in `obsidian-plugins/.gitignore` so that the symlink doesn't appear in the git repo. We need to do this because the templater plugin requires all templates be located in the same folder, but we want some of them to be vault specific (located in `Templates/`) and some of them to appear across multiple vaults (`obsidian-plugins/templates`). 
 
