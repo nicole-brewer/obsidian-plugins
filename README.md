@@ -31,6 +31,10 @@ Templater only accepts one folder (and subfolders) as the location of template f
 
 `./vault-automations.sh /Users/nabrewer/Applications/Obsidian/<vault-name>`
 
+If you want to test and also **prepend** log the output to `./LOG`, use `{ /Users/nabrewer/Applications/Obsidian/Life-Binder/obsidian-plugins/vault-automations.sh /Users/nabrewer/Applications/Obsidian/Life-Binder 2>&1; cat /Users/nabrewer/Applications/Obsidian/Life-Binder/LOG.md; } > /Users/nabrewer/Applications/Obsidian/Life-Binder/LOG.md.new && mv /Users/nabrewer/Applications/Obsidian/Life-Binder/LOG.md.new /Users/nabrewer/Applications/Obsidian/Life-Binder/LOG.md`. 
+
+The prepend is the reason that is so verbose.
+
 ### 2. Add the cron job
 
 This:
@@ -42,6 +46,15 @@ This:
 `(crontab -l 2>/dev/null; echo "0 * * * * $(pwd)/vault-automations.sh >> /tmp/vault-automations.log 2>&1") | crontab -`
 
 Or you can edit the chrontab via `chrontab -e`.
+
+The script should look like this
+```
+{ /Users/nabrewer/Applications/Obsidian/Academic/obsidian-plugins/vault-automations.sh /Users/nabrewer/Applications/Obsidian/Academic 2>&1; cat /Users/nabrewer/Applications/Obsidian/Academic/LOG.md; } > /Users/nabrewer/Applications/Obsidian/Academic/LOG.md.new && mv /Users/nabrewer/Applications/Obsidian/Academic/LOG.md.new /Users/nabrewer/Applications/Obsidian/Academic/LOG.md
+
+{ /Users/nabrewer/Applications/Obsidian/Personal/obsidian-plugins/vault-automations.sh /Users/nabrewer/Applications/Obsidian/Personal 2>&1; cat /Users/nabrewer/Applications/Obsidian/Personal/LOG.md; } > /Users/nabrewer/Applications/Obsidian/Personal/LOG.md.new && mv /Users/nabrewer/Applications/Obsidian/Personal/LOG.md.new /Users/nabrewer/Applications/Obsidian/Personal/LOG.md
+
+{ /Users/nabrewer/Applications/Obsidian/Life-Binder/obsidian-plugins/vault-automations.sh /Users/nabrewer/Applications/Obsidian/Life-Binder 2>&1; cat /Users/nabrewer/Applications/Obsidian/Life-Binder/LOG.md; } > /Users/nabrewer/Applications/Obsidian/Life-Binder/LOG.md.new && mv /Users/nabrewer/Applications/Obsidian/Life-Binder/LOG.md.new /Users/nabrewer/Applications/Obsidian/Life-Binder/LOG.md
+```
 ### 3. Verify the job is listed
 
 `crontab -l`

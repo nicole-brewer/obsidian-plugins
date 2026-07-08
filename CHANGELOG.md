@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-07-07
+I added a copy of all my configurations in `.obsidian` to `obsidian-plugins/config` so then I can manually use rsync to copy the files from one to the other as plugins get added. 
+
+From `obsidian-plugins`:
+- If you want `.obsidian` to exactly mirror `config`, `rsync -a --delete config/ ../.obsidian/`
+- Or vice versa, `rsync -a --delete ../.obsidian/ config/`
+
 ## 2026-06-30
 The script `auto-commit.sh` used to be a vault specific file but I moved it to `obsidian-plugins/vault-automations.sh`. It now takes an argument (the vault path) so you can use it unmodified for any vault. It has added functionality where vault-specific templates are copied to `Templates - READ ONLY` in the root vault repo to keep concerns separate. This is a work around since templater doesn't let you list multiple source directories for templates. 
 
