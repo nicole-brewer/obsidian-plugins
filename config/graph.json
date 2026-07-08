@@ -1,0 +1,22 @@
+{
+  "collapse-filter": false,
+  "search": "fernando",
+  "showTags": false,
+  "showAttachments": false,
+  "hideUnresolved": false,
+  "showOrphans": true,
+  "collapse-color-groups": false,
+  "colorGroups": [],
+  "collapse-display": false,
+  "showArrow": true,
+  "textFadeMultiplier": 0,
+  "nodeSizeMultiplier": 1.18903380356668,
+  "lineSizeMultiplier": 1.60291012332535,
+  "collapse-forces": false,
+  "centerStrength": 0.413938426049153,
+  "repelStrength": 10,
+  "linkStrength": 1,
+  "linkDistance": 107,
+  "scale": 0.11046825466624975,
+  "close": false
+}

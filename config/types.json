@@ -1,0 +1,20 @@
+{
+  "types": {
+    "aliases": "aliases",
+    "cssclasses": "multitext",
+    "tags": "tags",
+    "date": "date",
+    "week": "date",
+    "authors": "multitext",
+    "date-mod": "datetime",
+    "date-created": "datetime",
+    "date-modified": "datetime",
+    "attendees": "multitext",
+    "institutions": "multitext",
+    "presenter": "multitext",
+    "links": "multitext",
+    "people": "multitext",
+    "related": "multitext",
+    "organizers": "multitext"
+  }
+}

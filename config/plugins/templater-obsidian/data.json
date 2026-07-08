@@ -1,0 +1,26 @@
+{
+  "command_timeout": 5,
+  "templates_folder": "obsidian-plugins/templates",
+  "templates_pairs": [],
+  "trigger_on_file_creation": true,
+  "auto_jump_to_cursor": true,
+  "enable_system_commands": true,
+  "shell_path": "/bin/zsh",
+  "user_scripts_folder": "obsidian-plugins/scripts",
+  "enable_folder_templates": true,
+  "folder_templates": [],
+  "syntax_highlighting": true,
+  "enabled_templates_hotkeys": [
+    "Templates/templates/Default Note.md",
+    "Templates/templates/Meeting.md",
+    "Templates/templates/Person.md",
+    "Templates/templates/Project.md",
+    "Templates/templates/Word.md",
+    "Templates/templates/Experiment.md",
+    "Templates/templates/Journal Entry - Digital.md"
+  ],
+  "startup_templates": [
+    ""
+  ],
+  "enable_ribbon_icon": true
+}

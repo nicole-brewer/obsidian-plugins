@@ -1,0 +1,8 @@
+{
+  "alwaysUpdateLinks": true,
+  "newFileLocation": "folder",
+  "newFileFolderPath": "pages",
+  "attachmentFolderPath": "./",
+  "showUnsupportedFiles": true,
+  "promptDelete": false
+}
