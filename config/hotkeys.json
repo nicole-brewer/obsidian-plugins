@@ -133,5 +133,22 @@
       ],
       "key": "Z"
     }
+  ],
+  "banner-images:insert-banner-frontmatter": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "V"
+    }
+  ],
+  "editor:open-search": [],
+  "sfb-better-search-and-replace:find-and-replace": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "F"
+    }
   ]
 }

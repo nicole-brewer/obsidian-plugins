@@ -1,0 +1,9 @@
+{
+  "useRegex": true,
+  "caseSensitive": false,
+  "wholeWord": true,
+  "matchColor": "rgba(120, 220, 232, 0.45)",
+  "matchStrikethroughColor": "#FF6188",
+  "previewColor": "rgba(169, 220, 118, 0.45)",
+  "currentMatchColor": "rgba(255, 216, 102, 0.7)"
+}

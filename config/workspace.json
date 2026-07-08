@@ -4,221 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "9b99ed6d6316fa8a",
+        "id": "129f40a803c24272",
         "type": "tabs",
         "children": [
           {
-            "id": "9e9facbdab0b2eb1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Journals/Year of Expression/2025-07-07 - Labor Organizing and DEI in RSEng.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "2025-07-07 - Labor Organizing and DEI in RSEng"
-            }
-          },
-          {
-            "id": "154e0b27f95596b9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Journals/Year of Expression/Summer 2025 Dreams - 2024-05-07.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Summer 2025 Dreams - 2024-05-07"
-            }
-          },
-          {
-            "id": "c3a19da644c0461b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Journals/Year of Expression/Reflecting on Knowledge Equity with Unsettling Knowledge Inequities Podcast - 2024-09-06.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Reflecting on Knowledge Equity with Unsettling Knowledge Inequities Podcast - 2024-09-06"
-            }
-          },
-          {
-            "id": "23154567d2e92a4a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Publications/nelson21.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "nelson21"
-            }
-          },
-          {
-            "id": "d2dbccd56bd0815a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Journals/Year of Expression/2026-10-20 - Identity Research Part 2.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "2026-10-20 - Identity Research Part 2"
-            }
-          },
-          {
-            "id": "82505c4364ab29bc",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Journals/Year of Expression/2026-10-21 - Autoethnographic Exploration Paper.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "2026-10-21 - Autoethnographic Exploration Paper"
-            }
-          },
-          {
-            "id": "924453ac739193e1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Meetings/Meeting with Mirka Koro - 2026-10-23.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Meeting with Mirka Koro - 2026-10-23"
-            }
-          },
-          {
-            "id": "cd6fd59833d9cf5c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Journals/Year of Expression/2026-10-24 - Dissertation Topics.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "2026-10-24 - Dissertation Topics"
-            }
-          },
-          {
-            "id": "01f74a11b468fc04",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Publications/winer22.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "winer22"
-            }
-          },
-          {
-            "id": "3f6f42fd94d507e1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Journals/Year of Expression/2025-11-03 - Working the dissertation topic.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "2025-11-03 - Working the dissertation topic"
-            }
-          },
-          {
-            "id": "4cf843b87711aef4",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Journals/Year of Expression/2025-11-04 - Bisexual Identity Formation Frameworks.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "2025-11-04 - Bisexual Identity Formation Frameworks"
-            }
-          },
-          {
-            "id": "77ee66019b180132",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Journals/Year of Expression/2026-11-18 - New Dissertation Committee.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "2026-11-18 - New Dissertation Committee"
-            }
-          },
-          {
-            "id": "d33979600e0c3293",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Meetings/Meeting with Mirka Koro - 2026-11-20.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Meeting with Mirka Koro - 2026-11-20"
-            }
-          },
-          {
-            "id": "5863d457740f3c93",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Communication/Email to Sara Brownell - 2025-11-20.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Email to Sara Brownell - 2025-11-20"
-            }
-          },
-          {
-            "id": "d891aa657dcfc574",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Communication/Email to Mark Ward - 2025-11-22.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Email to Mark Ward - 2025-11-22"
-            }
-          },
-          {
-            "id": "b6ce37f972a980d6",
+            "id": "ee9fbd1d8d93037b",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -232,35 +22,7 @@
             }
           },
           {
-            "id": "9ec16261e3c2a153",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "pages/DO NOT CLOSE!!!!.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "DO NOT CLOSE!!!!"
-            }
-          },
-          {
-            "id": "7bc6613ba988c3e6",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Templates/Slack.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Slack"
-            }
-          },
-          {
-            "id": "611525712f53c73e",
+            "id": "b04a9e5f050f9a06",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -272,9 +34,37 @@
               "icon": "lucide-file",
               "title": "CHANGELOG"
             }
+          },
+          {
+            "id": "d632cece8119b5e7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "LOG.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "LOG"
+            }
+          },
+          {
+            "id": "5e8e35d81173e02f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "obsidian-plugins/README.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "README"
+            }
           }
         ],
-        "currentTab": 18
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -306,7 +96,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "bio 112",
+                "query": "",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -414,16 +204,6 @@
             }
           },
           {
-            "id": "afe0e3428cd32d29",
-            "type": "leaf",
-            "state": {
-              "type": "calendar",
-              "state": {},
-              "icon": "calendar-with-checkmark",
-              "title": "Calendar"
-            }
-          },
-          {
             "id": "d54c874379097030",
             "type": "leaf",
             "state": {
@@ -434,7 +214,7 @@
             }
           }
         ],
-        "currentTab": 6
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
@@ -447,7 +227,6 @@
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
-      "templates:Insert template": false,
       "command-palette:Open command palette": false,
       "notion-like-tables:Create new loom": false,
       "templater-obsidian:Templater": false,
@@ -455,27 +234,33 @@
       "periodic-notes:Open this week": false
     }
   },
-  "active": "611525712f53c73e",
+  "active": "b04a9e5f050f9a06",
   "lastOpenFiles": [
     "obsidian-plugins/README.md",
-    "obsidian-plugins/vault-automations.sh",
-    "Health/Insurance/attachments/2026-summer-insurance-card.pdf",
-    "Job/ASU Graduate Student/Summer Semester.md",
     "LOG.md",
-    "Health/Handouts/Physical Therapy Handouts/2026-07-01-HEP.pdf",
-    "Health/Handouts/Physical Therapy Handouts",
-    "Mental Health/Handouts/Polyvagal neck stretch.pdf",
+    "obsidian-plugins/CHANGELOG.md",
+    "obsidian-plugins/templates/custom/Flashback.md",
+    "obsidian-plugins/templates/custom/Health Appointment.md",
+    "Job/ASU Graduate Student/Summer Semester.md",
+    "Job/ASU Graduate Student/Teaching Assistantships.md",
+    "Job/ASU Graduate Student/Screenshot 2026-05-25 at 3.34.49 PM.png",
+    "Health/Appointments/2026-07-08 - slkfj.md",
+    "Health/Appointments/2026-07-08ls - slfk.md",
+    "obsidian-plugins/config/themes/Wikipedia/theme.css",
+    "obsidian-plugins/config/themes/Wikipedia/manifest.json",
+    "obsidian-plugins/config/themes/Wikipedia",
+    "obsidian-plugins/config/themes/Retroma/theme.css",
+    "obsidian-plugins/config/themes/Retroma/manifest.json",
+    "obsidian-plugins/config/themes/Retroma",
+    "obsidian-plugins/config/themes/Prism/theme.css",
+    "obsidian-plugins/config/themes/Prism/manifest.json",
+    "obsidian-plugins/config/themes/Prism",
+    "obsidian-plugins/config/themes/LaTeX/theme.css",
     "Templates - READ ONLY/Flashback.md",
     "Health/Appointments/2026-06-10 - Hypermobility PT Intake.md",
-    "obsidian-plugins/CHANGELOG.md",
     "Finances/Credit Cards.md",
-    "LOG.md.new",
     "README.md",
     "pdf/2/Browne.md",
-    "pdf/2",
-    "pdf",
-    "obsidian-plugins",
-    "looms/mental_health.loom",
     "doi.org/10.1080/13645579.2023.2248832.md",
     "Daily Notes/2024-01-29.md",
     "obsidian-plugins/templates/Weekly Note.md",
@@ -487,11 +272,6 @@
     "Daily Notes/2024-02-05.md",
     "Daily Notes/2024-02-04.md",
     "Daily Notes/2024-01-22.md",
-    "Journals/Year of Expression/2024-10-16 - Random US-RSE conference notes.md",
-    "Journals/Year of Expression/2024-09-27 - Invisible Work - Are RSEs Really Marginalized.md",
-    "Journals/Year of Expression/2024-09-03.md",
-    "People/Chase Million.md",
-    "People/Tanu Malik.md",
     "Journals/Year of Expression/IMG_5080 2.png",
     "Journals/Year of Expression/IMG_5081 2.png",
     "Journals/Year of Expression/Screenshot 2025-10-27 at 4.14.13 PM.png",
@@ -501,7 +281,6 @@
     "Courses/Unconventional Organization/Screenshot 2024-12-16 at 12.19.41 PM.png",
     "Courses/Unconventional Organization/Screenshot 2024-12-16 at 12.17.48 PM.png",
     "Journals/Year of Expression/Screenshot 2024-12-13 at 9.47.40 AM.png",
-    "Communications/Screenshot 2024-12-12 at 1.20.03 PM.png",
     "Untitled.canvas",
     "Untitled 1.canvas",
     "Untitled 4.canvas",

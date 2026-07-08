@@ -1,0 +1,8 @@
+{
+  "enabled": true,
+  "defaultHeight": 200,
+  "defaultOpacity": 1,
+  "defaultOffset": "center",
+  "defaultGradient": false,
+  "defaultFit": "none"
+}

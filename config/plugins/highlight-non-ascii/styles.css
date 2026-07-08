@@ -1,0 +1,148 @@
+/* Structural defaults (display/min-width/etc.) are kept in this stylesheet
+   rather than the user-editable customCSS so zero-width and very narrow
+   characters still render with a visible pill even if the user customizes
+   colors. Override in customCSS if you really want to change them. */
+.non-ascii-highlight {
+	background-color: rgba(255, 60, 60, 1);
+	padding: 1px;
+	border: 1px solid rgb(255, 255, 255);
+	border-radius: 2px;
+	display: inline-block;
+	min-width: 0.5em;
+	min-height: 1em;
+	box-sizing: border-box;
+	text-align: center;
+	vertical-align: baseline;
+	line-height: 1;
+}
+
+/* Settings page -- frontmatter hint */
+
+.hna-frontmatter-hint {
+	margin-bottom: 1em;
+	padding: 12px 16px;
+	background: var(--background-secondary);
+	border-radius: 10px;
+}
+
+.hna-frontmatter-hint h3 {
+	margin-top: 0;
+}
+
+.hna-code-wrapper {
+	position: relative;
+}
+
+.hna-frontmatter-hint pre {
+	padding: 8px 12px;
+	border-radius: 6px;
+	background: var(--background-primary);
+	font-size: 0.85em;
+	user-select: text;
+	-webkit-user-select: text;
+}
+
+.hna-copy-btn {
+	position: absolute;
+	top: 6px;
+	right: 6px;
+	padding: 2px 8px;
+	font-size: 0.75em;
+	border-radius: 4px;
+	border: 1px solid var(--background-modifier-border);
+	background: var(--background-secondary);
+	color: var(--text-muted);
+	cursor: pointer;
+}
+
+.hna-copy-btn:hover {
+	color: var(--text-normal);
+	border-color: var(--interactive-accent);
+}
+
+.hna-monospace {
+	font-family: var(--font-monospace);
+}
+
+/* Settings page -- CSS editor */
+
+.hna-css-editor {
+	margin-top: 4px;
+}
+
+.hna-css-textarea {
+	width: 100%;
+	max-width: 500px;
+	min-height: 140px;
+	padding: 8px 10px;
+	border-radius: 6px;
+	border: 1px solid var(--background-modifier-border);
+	background: var(--background-primary);
+	color: var(--text-normal);
+	font-family: var(--font-monospace);
+	font-size: 0.85em;
+	line-height: 1.5;
+	tab-size: 2;
+	resize: vertical;
+}
+
+/* Settings page -- auto-replace rules */
+
+.hna-rules-container {
+	margin-bottom: 8px;
+}
+
+.hna-rule-row {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	padding: 6px 0;
+	border-bottom: 1px solid var(--background-modifier-border);
+	flex-wrap: wrap;
+}
+
+.hna-rule-label {
+	display: flex;
+	align-items: center;
+	gap: 4px;
+	font-size: 0.85em;
+	color: var(--text-muted);
+}
+
+.hna-rule-input {
+	width: 80px;
+	padding: 4px 6px;
+	border: 1px solid var(--background-modifier-border);
+	border-radius: 4px;
+	background: var(--background-primary);
+	color: var(--text-normal);
+	font-size: 0.9em;
+}
+
+.hna-rule-input:focus {
+	border-color: var(--interactive-accent);
+	outline: none;
+}
+
+.hna-rule-charcode {
+	font-size: 0.75em;
+	color: var(--text-faint);
+	font-family: var(--font-monospace);
+	min-width: 60px;
+}
+
+.hna-rule-delete {
+	padding: 2px 8px;
+	font-size: 0.75em;
+	border-radius: 4px;
+	border: 1px solid var(--background-modifier-border);
+	background: var(--background-secondary);
+	color: var(--text-muted);
+	cursor: pointer;
+	margin-left: auto;
+}
+
+.hna-rule-delete:hover {
+	color: #FF6188;
+	border-color: #FF6188;
+}
