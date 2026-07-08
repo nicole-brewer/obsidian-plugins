@@ -1,8 +1,9 @@
 {
   "alwaysUpdateLinks": true,
-  "newFileLocation": "folder",
+  "newFileLocation": "root",
   "newFileFolderPath": "pages",
   "attachmentFolderPath": "./",
   "showUnsupportedFiles": true,
-  "promptDelete": false
+  "promptDelete": false,
+  "openBehavior": "file:LOG"
 }

@@ -1,5 +1,14 @@
 # Changelog
 
+## 2026-07-08
+Added many themes. Removed old plugins that I never used and are no longer maintained. Added Plugins from [@saltyfireball](https://community.obsidian.md/users/saltyfireball), which I tested with their most basic examples to make sure they worked like I wanted them to:
+- [Code Editor](https://community.obsidian.md/plugins/code-editor) to open and edit files from inside Obsidian
+- [Open in New Tab](https://community.obsidian.md/plugins/sfb-open-in-new-tab) - Forces files to open in new tabs instead of replacing the current tab. Importantly, if a file is already open in another tab, focuses that tab instead of opening a duplicate
+- ~~[Auto View Mode](https://community.obsidian.md/plugins/auto-view-mode) - Automatically switch between Reading View, Source Mode, and Live Preview based on a frontmatter key (default `auto-view-mode`) in your notes.~~ I tried this plugin because it's always annoying that templater files show up in preview mode, but there's not a way to add it to the template and then remove it from the resulting file, so I don't know if I have a usecase for it.
+- [Highlight Non-ASCII](https://community.obsidian.md/plugins/highlight-non-ascii) - Highlights non-ASCII characters in your notes and the option to replace them with ASCII equivalents 
+- [Better Search and Replace](https://community.obsidian.md/plugins/sfb-better-search-and-replace) - This plugin allows Regex for in-file search and replace. I replaced command-F with this version. I wish/hope there is something similar for the Obsidian wide search bar!
+- [Banner Images](https://community.obsidian.md/plugins/banner-images) - Display banner images at the top of notes using frontmatter fields. Supports vault images, external URLs, custom height, opacity, vertical positioning, and gradient transparency. This is useful if I ever want to keep a wiki site in Obsidian. 
+
 ## 2026-07-07
 I added a copy of all my configurations in `.obsidian` to `obsidian-plugins/config` so then I can manually use rsync to copy the files from one to the other as plugins get added. 
 

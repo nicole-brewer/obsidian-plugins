@@ -1,5 +1,6 @@
 {
-  "accentColor": "",
+  "accentColor": "#69bfbc",
   "theme": "moonstone",
-  "cssTheme": "Solarized"
+  "cssTheme": "Prism",
+  "translucency": false
 }
